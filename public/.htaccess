@@ -1,0 +1,18 @@
+php_value upload_max_filesize 2048M
+php_value post_max_size 2048M
+php_value max_execution_time 1800
+php_value max_input_time 1800
+
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+	RewriteCond %{HTTP:Authorization} ^(.*) 
+	RewriteRule .* - [e=HTTP_AUTHORIZATION:%1]
+    # Redirect to public/index.php
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^ index.php [L]
+</IfModule>
