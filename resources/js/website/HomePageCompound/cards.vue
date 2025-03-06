@@ -59,7 +59,7 @@ export default {
                 link: "#",
                 rating: 0,
                 price: '$12.99',
-                discount: '79.99$',
+                discount: '$79.99',
             },
             {
                 title: "The Complete Full-Stack Web Development Bootcamp",
@@ -68,7 +68,7 @@ export default {
                 link: "#",
                 rating: 4.5,
                 price: '$12.99',
-                discount: '79.99$',
+                discount: '$79.99',
             },
             {
                 title: "The Complete Full-Stack Web Development Bootcamp",
@@ -77,7 +77,7 @@ export default {
                 link: "#",
                 rating: 4.5,
                 price: '$12.99',
-                discount: '79.99$',
+                discount: '$79.99',
             },
             {
                 title: "The Complete Full-Stack Web Development Bootcamp",
@@ -86,7 +86,7 @@ export default {
                 link: "#",
                 rating: 4.5,
                 price: '$12.99',
-                discount: '79.99$',
+                discount: '$79.99',
             },
             {
                 title: "The Complete Full-Stack Web Development Bootcamp",
@@ -95,7 +95,7 @@ export default {
                 link: "#",
                 rating: 4.5,
                 price: '$12.99',
-                discount: '79.99$',
+                discount: '$79.99',
             },
             {
                 title: "The Complete Full-Stack Web Development Bootcamp",
@@ -104,7 +104,7 @@ export default {
                 link: "#",
                 rating: 4.5,
                 price: '$12.99',
-                discount: '79.99$',
+                discount: '$79.99',
             },
             {
                 title: "The Complete Full-Stack Web Development Bootcamp",
@@ -113,7 +113,7 @@ export default {
                 link: "#",
                 rating: 4.5,
                 price: '$12.99',
-                discount: '79.99$',
+                discount: '$79.99',
             }
         ];
 

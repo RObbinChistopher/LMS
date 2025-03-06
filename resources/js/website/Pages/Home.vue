@@ -1,6 +1,23 @@
 <template>
     <div class="">
-        <img src="../../../../public/frontend/images/t3.png" class="d-block w-100" alt="...">
+        <div class="container d-flex gap-3 mb-3 mt-3">
+            <div class="image-circle">C</div>
+            <div class="">
+                <p class="mb-0 w-header-text" style="font-weight: 800; line-height: 2.3rem;">Welcome back, Christopher
+                </p>
+                <router-link to="/" class="mb-0 card-title crad-interesting"
+                    style="font-weight: 500;"><span class="card-items">Add occupation and interests</span></router-link>
+            </div>
+        </div>
+        <div class="crad-design" style="position: relative;">
+            <div class="card-inner-design ">
+                <p class="mb-0 w-header-text" style="font-weight: 800; line-height: 2.3rem;">Christopher, thanks for
+                    trying a free course</p>
+                <p class="mb-0 card-title" style="font-weight: 500;">Now, unlock our best features with courses as low
+                    as
+                    $10.99 — limited time only.</p>
+            </div>
+        </div>
         <!-- <Adslider></Adslider> -->
         <div class="w-main-content">
             <div class="container">
@@ -153,6 +170,44 @@ export default {
 </script>
 
 <style scoped>
+.crad-interesting {
+    font-weight: 500;
+    font-size: medium;
+    color: #391e6b;
+}
+
+.image-circle {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #391e6b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #391e6b;
+    color: white;
+    font-size: 42px;
+}
+
+.crad-design {
+    background-image: url(/frontend/images/t3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+}
+
+.card-inner-design {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 27%;
+    padding: 15px;
+    position: absolute;
+    top: 3rem;
+    left: 8rem;
+    border-radius: 5px;
+}
+
 .usp-type-design-back {
     line-height: 35px;
     background: #361d67;
@@ -200,6 +255,7 @@ export default {
     border-radius: 10px;
     margin-top: 2rem;
 }
+
 .subcatgeory-card:hover {
     background: #6ee0fb;
     color: black;

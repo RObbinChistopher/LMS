@@ -16,6 +16,7 @@
 
             <Header v-if="showHeader" />
             <WebsiteHeader v-if="showWebsiteHeader" />
+            <PaymentHeader v-if="PaymentHeader" />
             <main>
                 <router-view></router-view>
             </main>
@@ -30,12 +31,14 @@ import Header from './include/Header.vue';
 import Sidebar from './include/sidebar.vue';
 import WebsiteHeader from '../website/include/Header.vue'
 import WebsiteFooter from '../website/include/Footer.vue'
+import PaymentHeader from '../website/include/HeaderTwo.vue'
 export default {
     components: {
         Header,
         Sidebar,
         WebsiteHeader,
         WebsiteFooter,
+        PaymentHeader,
     },
 
     computed: {
@@ -50,6 +53,9 @@ export default {
         },
         showSlideBar() {
             return this.$route.meta.showSlideBar !== false;
+        },
+        PaymentHeader() {
+            return this.$route.meta.PaymentHeader !== false;
         },
         computedColClass() {
             if (this.showSlideBar) {

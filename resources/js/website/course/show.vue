@@ -223,7 +223,7 @@
                                 <p class="price-remain-discount mb-0"><strong>1 day</strong> left at this price!</p>
                             </div>
                             <div class="d-flex gap-2 mt-3" style="align-items: baseline;">
-                                <p class="btn-all-data mb-2">Add to cart</p>
+                                <router-link to="/cart" class="btn-all-data mb-2" style="text-decoration: none;">Add to cart</router-link>
                                 <p class="card-title-heard-icon mb-2">
                                     <i class="fa-regular fa-heart"></i>
                                 </p>
@@ -450,17 +450,6 @@ export default {
     outline: none;
     box-shadow: none !important;
 }
-
-.btn-all-data-coupon {
-    border: 1px solid #361d67;
-    padding: 7px 0;
-    border-radius: 5px;
-    background: #361d67;
-    color: white;
-    width: 40%;
-    text-align: center;
-}
-
 .main-thinh-course {
     font-size: 16px;
     font-weight: 800;
@@ -608,10 +597,7 @@ export default {
     background: #6EE0fB;
     color: black;
 }
-.btn-all-data-coupon:hover {
-    background: #6EE0fB;
-    color: black;
-}
+
 .lectures {
     padding: 10px;
     background: white;

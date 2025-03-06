@@ -307,7 +307,7 @@ input {
 }
 
 .w-header-text {
-    font-size: xx-large;
+    font-size: 28px;
     font-weight: 900;
 }
 
@@ -424,3 +424,21 @@ input {
     border: 1px solid #f6f7f9 !important;
 }
 
+.btn-all-data-coupon {
+    border: 1px solid #361d67;
+    padding: 7px 0;
+    border-radius: 5px;
+    background: #361d67;
+    color: white;
+    width: 40%;
+    text-align: center;
+}
+.btn-all-data-coupon:hover {
+    background: #6EE0fB;
+    color: black;
+}
+.card-items:hover {
+    background-color: #361d673d;
+    padding: 3px 0;
+    border-radius: 5px;
+}
